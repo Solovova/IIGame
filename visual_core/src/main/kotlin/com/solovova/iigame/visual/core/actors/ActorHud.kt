@@ -10,26 +10,28 @@ import com.badlogic.gdx.scenes.scene2d.Actor
 import com.badlogic.gdx.scenes.scene2d.ui.Label
 import com.badlogic.gdx.scenes.scene2d.ui.Table
 
-
-class ActorHud() : Actor() {
+class ActorHud(private val actorMap: ActorMap) : Actor() {
     private val labelTurn: Label
     private val labelHealth: Label
 
     var font: BitmapFont
-    private val table: Table
+    private var table: Table
 
-    fun update(turn:Int) {
-        labelTurn.setText(String.format("%03d", turn))
+    private fun update() {
+        labelTurn.setText(String.format("%03d", actorMap.getTurn()))
     }
 
     override fun draw(batch: Batch?, alf: Float) {
+        this.update()
+        //Gdx.gl.glViewport(Gdx.graphics.width-150,0,150,Gdx.graphics.height)
+
         table.draw(batch,1f)
     }
 
     override fun drawDebug(shapeRenderer: ShapeRenderer) {
         table.drawDebug(shapeRenderer)
-    }
 
+    }
 
     init {
         val generator = FreeTypeFontGenerator(Gdx.files.internal("fonts/proximanova.ttf"))
@@ -40,12 +42,12 @@ class ActorHud() : Actor() {
 
         generator.dispose()
 
-        labelTurn = Label(String.format("%03d", 0), Label.LabelStyle(font, Color.BLACK))
+        labelTurn = Label(String.format("%03d", 0), Label.LabelStyle(BitmapFont(), Color.BLACK))
         labelHealth = Label("100", Label.LabelStyle(font, Color.BLACK))
 
         //define a table used to organize hud's labels
         table = Table()
-        table.setFillParent(true)
+
 
         table.add<Actor>(Label("Turn:", Label.LabelStyle(font, Color.BLACK))).left()
         table.add<Actor>(labelTurn).expandX().right()
@@ -54,16 +56,10 @@ class ActorHud() : Actor() {
         table.add<Actor>(Label("Rest:", Label.LabelStyle(font, Color.BLACK))).left()
         table.add<Actor>(labelHealth).expandX().right()
         table.debugCell()
-
-
-//        table.left()
-//        table.bottom()
-
-        table.setSize(80f, 100f)
-        table.setPosition(Gdx.graphics.width.toFloat()-80f, Gdx.graphics.height.toFloat()-100f)
+        
+        table.setFillParent(false)
+        table.setBounds(Gdx.graphics.width-100f, Gdx.graphics.height-200f, 100f, 100f)
     }
 
-    fun getTableWidth():Int {
-        return table.width.toInt()
-    }
+
 }

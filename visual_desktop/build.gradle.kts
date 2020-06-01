@@ -18,6 +18,8 @@ dependencies {
     api ("com.badlogicgames.gdx:gdx-controllers-platform:${project.extra["gdxVersion"]}:natives-desktop")
     api ("com.badlogicgames.gdx:gdx-bullet-platform:${project.extra["gdxVersion"]}:natives-desktop")
     api ("com.google.code.gson:gson:${project.extra["gsonVersion"]}")
+    api ("io.github.libktx:ktx-app:1.9.10-b5")
+    api ("com.kotcrab.vis:vis-ui:1.4.2")
 
 
 

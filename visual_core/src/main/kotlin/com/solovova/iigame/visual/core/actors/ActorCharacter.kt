@@ -8,11 +8,11 @@ import com.badlogic.gdx.scenes.scene2d.Actor
 import com.solovova.iigame.visual.core.logic.LogicTiledMap
 
 class ActorCharacter(tiledMap: TiledMap): Actor() {
+
     private val textureCharacter: Texture = Texture("char_face.png")
     var turn: Int = 0
-    private var collision:Array<Array<Int>>
+    private var collision:Array<Array<Int>> = LogicTiledMap().loadFromCacheOrTMap(tiledMap)
 
-    //fun getTurn():Int = this.turn
 
     private var tx: Int = 0
         set(value) {
@@ -28,7 +28,7 @@ class ActorCharacter(tiledMap: TiledMap): Actor() {
         }
 
     override fun draw(batch: Batch, parentAlpha: Float) {
-        batch.draw(textureCharacter, tx.toFloat(), ty.toFloat(),1f,1f)
+        batch.draw(textureCharacter, tx*16f, ty*16f,16f,16f)
     }
 
     fun move(keycode: Int):Boolean {
@@ -40,7 +40,6 @@ class ActorCharacter(tiledMap: TiledMap): Actor() {
     }
 
     init {
-        this.collision = LogicTiledMap().loadFromCacheOrTMap(tiledMap)
         this.tx = 1
         this.ty = 1
         this.turn = 0

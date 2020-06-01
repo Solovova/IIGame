@@ -16,6 +16,10 @@ dependencies {
     api ("com.badlogicgames.gdx:gdx-bullet:${project.extra["gdxVersion"]}")
     api ("com.google.code.gson:gson:${project.extra["gsonVersion"]}")
 
+    api ("com.kotcrab.vis:vis-ui:1.4.2")
+    api ("io.github.libktx:ktx-app:1.9.10-b5")
+    api ("io.github.libktx:ktx-actors:1.9.10-b5")
+
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit")
 }
