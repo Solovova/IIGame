@@ -10,7 +10,8 @@ class MyInputProcessor(private val rc: ResContainer) : InputAdapter() {
             Input.Keys.UP to PlayerCommands.Up,
             Input.Keys.DOWN to PlayerCommands.Down,
             Input.Keys.LEFT to PlayerCommands.Left,
-            Input.Keys.RIGHT to PlayerCommands.Right
+            Input.Keys.RIGHT to PlayerCommands.Right,
+            Input.Keys.SPACE to PlayerCommands.Do
     )
 
     override fun keyDown(keycode: Int): Boolean {

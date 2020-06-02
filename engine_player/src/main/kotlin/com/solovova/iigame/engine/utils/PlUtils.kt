@@ -13,5 +13,7 @@ class PlUtils {
             if (v>maxV) return maxV
             return v
         }
+
+        fun coordinateToStr(x: Int,y:Int): String = "${x}_${y}"
     }
 }
