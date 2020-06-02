@@ -9,8 +9,9 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 import com.badlogic.gdx.scenes.scene2d.Actor
 import com.badlogic.gdx.scenes.scene2d.ui.Label
 import com.badlogic.gdx.scenes.scene2d.ui.Table
+import com.solovova.iigame.visual.core.rescontainer.ResContainer
 
-class ActorHud(private val actorMap: ActorMap) : Actor() {
+class ActorHud(private val rc: ResContainer) : Actor() {
     private val labelTurn: Label
     private val labelHealth: Label
 
@@ -18,7 +19,7 @@ class ActorHud(private val actorMap: ActorMap) : Actor() {
     private var table: Table
 
     private fun update() {
-        labelTurn.setText(String.format("%03d", actorMap.getTurn()))
+        labelTurn.setText(String.format("%03d", rc.player.getTurn()))
     }
 
     override fun draw(batch: Batch?, alf: Float) {

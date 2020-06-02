@@ -6,6 +6,7 @@ plugins {
 dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
+    implementation (project(":engine_player"))
     api ("com.badlogicgames.gdx:gdx:${project.extra["gdxVersion"]}")
     api ("com.badlogicgames.gdx:gdx-box2d:${project.extra["gdxVersion"]}")
     api ("com.badlogicgames.box2dlights:box2dlights:${project.extra["box2DLightsVersion"]}")

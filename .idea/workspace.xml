@@ -2,30 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="589aa6f0-d291-4768-952c-108e2a323804" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/IIGame.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine_player/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine_player/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine_player/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine_player/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine_player/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine_player/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tiledMapCollisionsGson.json" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/player/Player.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/player/PlayerCommands.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_core/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/engine_player/IIGame-engine_player.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/engine_player/IIGame-engine_player.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/visual_core/IIGame-visual_core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/visual_core/IIGame-visual_core.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/visual_desktop/IIGame-visual_desktop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/visual_desktop/IIGame-visual_desktop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGame.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MyInputProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MyInputProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorCharacter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorCharacter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorMap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/rescontainer/ResContainer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/rescontainer/ResContainer.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_desktop/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/visual_desktop/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_desktop/src/main/kotlin/com/solovova/iigame/visual/desktop/DesktopStarter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_desktop/src/main/kotlin/com/solovova/iigame/visual/desktop/DesktopStarter.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_desktop/tiledMapCollisionsGson.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +41,14 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+        <option value="Kotlin Enum" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -85,7 +85,7 @@
       </method>
     </configuration>
     <configuration name="DesktopStarter" type="JetRunConfigurationType" nameIsGenerated="true">
-      <module name="visual_desktop" />
+      <module name="IIGame-visual_desktop" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -109,6 +109,14 @@
       <option name="presentableId" value="Default" />
       <updated>1591098554169</updated>
     </task>
+    <task id="LOCAL-00001" summary="v 0.01 AndroidStudio">
+      <created>1591099337570</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591099337570</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -123,5 +131,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v 0.01 AndroidStudio" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 0.01 AndroidStudio" />
   </component>
 </project>

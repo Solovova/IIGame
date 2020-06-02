@@ -18,8 +18,6 @@ class ActorMap(private val rc: ResContainer): Actor() {
     private val firstLayerInd: IntArray
     private val secondLayerInd: IntArray
 
-    fun getTurn():Int = character.turn
-
     init {
 
         cam = OrthographicCamera()
@@ -41,10 +39,6 @@ class ActorMap(private val rc: ResContainer): Actor() {
         )
 
         character = ActorCharacter(rc)
-
-        val inputProcessor  = MyInputProcessor(character)
-        Gdx.input.inputProcessor = inputProcessor
-
     }
 
     override fun draw(batch: Batch?, parentAlpha: Float) {
@@ -63,11 +57,11 @@ class ActorMap(private val rc: ResContainer): Actor() {
     }
 
     private fun canSetPosition(){
-        var posX = character.tx
+        var posX = rc.player.getX()
         if (posX<10) posX=10
         if (posX>(38-10)) posX=38-10
 
-        var posY = character.ty
+        var posY = rc.player.getY()
         if (posY<15) posY=15
         if (posY>(34-17)) posY=34-17
 
