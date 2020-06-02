@@ -9,6 +9,8 @@ dependencies {
     implementation(platform("org.jetbrains.kotlin:kotlin-bom"))
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     implementation (project(":visual_core"))
+    implementation (project(":engine_player"))
+
     api ("com.badlogicgames.gdx:gdx-backend-lwjgl:${project.extra["gdxVersion"]}")
     api ("com.badlogicgames.gdx:gdx-platform:${project.extra["gdxVersion"]}:natives-desktop")
     api ("com.badlogicgames.gdx:gdx-box2d-platform:${project.extra["gdxVersion"]}:natives-desktop")

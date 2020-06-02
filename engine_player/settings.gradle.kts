@@ -7,6 +7,4 @@
  * in the user manual at https://docs.gradle.org/6.4.1/userguide/multi_project_builds.html
  */
 
-rootProject.name = "IIGame"
-
-include ("visual_core","visual_desktop","engine_player")
+rootProject.name = "engine_player"
