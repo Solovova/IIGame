@@ -21,7 +21,7 @@ class ActorMap(private val rc: ResContainer): Actor() {
     init {
 
         cam = OrthographicCamera()
-        cam.setToOrtho(false, 16*20f, 16*34f)
+        cam.setToOrtho(false, 16*24f, 16*34f)
         renderer = OrthogonalTiledMapRenderer(rc.rcMap.getTiledMap(), 1f)
 
         val mapLayers: MapLayers = rc.rcMap.getTiledMap().layers
@@ -58,12 +58,12 @@ class ActorMap(private val rc: ResContainer): Actor() {
 
     private fun canSetPosition(){
         var posX = rc.player.getX()
-        if (posX<10) posX=10
-        if (posX>(38-10)) posX=38-10
+        if (posX<12) posX=12
+        if (posX>(rc.rcMap.mapWith-12)) posX=rc.rcMap.mapWith-12
 
         var posY = rc.player.getY()
         if (posY<15) posY=15
-        if (posY>(34-17)) posY=34-17
+        if (posY>(rc.rcMap.mapHeight-17)) posY=rc.rcMap.mapHeight-17
 
         cam.position.set(posX*16f, posY*16f,0f)
     }

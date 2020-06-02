@@ -32,7 +32,6 @@ class MainGameScreen(rc: ResContainer) : Screen {
         actorMap.draw(batch,0f)
 
         batch.begin()
-
         actorHud.draw(batch,0f)
         batch.end()
     }

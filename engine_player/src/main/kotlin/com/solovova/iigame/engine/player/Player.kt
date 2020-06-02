@@ -2,8 +2,8 @@ package com.solovova.iigame.engine.player
 
 class Player(private val collision:Array<Array<Int>>) {
     private var turn: Int = 0
-    private var x: Int = 0
-    private var y: Int = 0
+    private var x: Int = 12
+    private var y: Int = 5
 
     fun getX() = this.x
     fun getY() = this.y
