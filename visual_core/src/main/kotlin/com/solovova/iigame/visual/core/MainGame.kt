@@ -1,19 +1,14 @@
 package com.solovova.iigame.visual.core
 
 import com.badlogic.gdx.Game
-import com.solovova.iigame.visual.core.logic.LogicTiledMap
-
+import com.solovova.iigame.visual.core.rescontainer.ResContainer
 
 class MainGame : Game() {
     override fun create() {
-        LogicTiledMap().saveToCache()
+        //LogicTiledMap().saveToCache()
 
-        val screen = MainGameScreen(this)
+        val rc = ResContainer()
+        val screen = MainGameScreen(rc)
         setScreen( screen)
-    }
-
-    override fun resize(width: Int, height: Int) {
-        //super.resize(width, height)
-
     }
 }

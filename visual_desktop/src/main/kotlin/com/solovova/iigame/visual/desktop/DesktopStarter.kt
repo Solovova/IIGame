@@ -14,8 +14,8 @@ object DesktopStarter {
         val cfg = LwjglApplicationConfiguration()
         cfg.title = "IIGame"
         cfg.useGL30 = true
-        cfg.width = 16*38+100
-        cfg.height = 16*34
+        cfg.width = 720
+        cfg.height = 1280
         LwjglApplication(MainGame(), cfg)
     }
 }

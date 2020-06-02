@@ -6,11 +6,13 @@ import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.solovova.iigame.visual.core.actors.ActorHud
 import com.solovova.iigame.visual.core.actors.ActorMap
+import com.solovova.iigame.visual.core.rescontainer.ResContainer
 
-class MainGameScreen(private val game: MainGame) : Screen {
-    private val actorMap = ActorMap()
-    private val actorHud = ActorHud(actorMap)
-    private val batch = SpriteBatch()
+class MainGameScreen(private val rc: ResContainer) : Screen {
+    private val batch:SpriteBatch = SpriteBatch()
+    private val actorMap:ActorMap
+    private val actorHud:ActorHud
+
 
     override fun resize(width: Int, height: Int) {
     }
@@ -20,16 +22,15 @@ class MainGameScreen(private val game: MainGame) : Screen {
     override fun hide() {}
 
     init {
-
+        actorMap = ActorMap(rc)
+        actorHud = ActorHud(actorMap)
     }
 
     override fun render(delta: Float) {
         Gdx.gl.glClearColor(145f/256f, 196f/256f, 53f/256f, 1f)
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
 
-        batch.begin()
         actorMap.draw(batch,0f)
-        batch.end()
 
         batch.begin()
 

@@ -23,8 +23,9 @@ class ActorHud(private val actorMap: ActorMap) : Actor() {
 
     override fun draw(batch: Batch?, alf: Float) {
         this.update()
-        //Gdx.gl.glViewport(Gdx.graphics.width-150,0,150,Gdx.graphics.height)
-
+        Gdx.gl.glViewport(0,Gdx.graphics.height-100,Gdx.graphics.width,Gdx.graphics.height)
+        table.setPosition(0f,0f)
+        table.setSize(100f,100f)
         table.draw(batch,1f)
     }
 
@@ -42,7 +43,7 @@ class ActorHud(private val actorMap: ActorMap) : Actor() {
 
         generator.dispose()
 
-        labelTurn = Label(String.format("%03d", 0), Label.LabelStyle(BitmapFont(), Color.BLACK))
+        labelTurn = Label(String.format("%03d", 0), Label.LabelStyle(font, Color.BLACK))
         labelHealth = Label("100", Label.LabelStyle(font, Color.BLACK))
 
         //define a table used to organize hud's labels
@@ -57,8 +58,9 @@ class ActorHud(private val actorMap: ActorMap) : Actor() {
         table.add<Actor>(labelHealth).expandX().right()
         table.debugCell()
         
-        table.setFillParent(false)
-        table.setBounds(Gdx.graphics.width-100f, Gdx.graphics.height-200f, 100f, 100f)
+        table.setFillParent(true)
+
+
     }
 
 
