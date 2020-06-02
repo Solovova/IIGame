@@ -29,7 +29,8 @@ class ActorMap(private val rc: ResContainer): Actor() {
                 mapLayers.getIndex("Ground/terrain"),
                 mapLayers.getIndex("Ground overlay"),
                 mapLayers.getIndex("Road"),
-                mapLayers.getIndex("NonBlockObjects")
+                mapLayers.getIndex("NonBlockObjects"),
+                mapLayers.getIndex("Points")
         )
 
         secondLayerInd = intArrayOf(
