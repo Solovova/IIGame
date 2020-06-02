@@ -42,7 +42,7 @@ class ActorMap(private val rc: ResContainer): Actor() {
         character = ActorCharacter(rc)
     }
 
-    override fun draw(batch: Batch?, parentAlpha: Float) {
+    fun draw() {
         canSetPosition()
 
         cam.update()
