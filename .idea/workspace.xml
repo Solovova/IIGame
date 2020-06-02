@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="589aa6f0-d291-4768-952c-108e2a323804" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorButtons.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/player/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/player/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/utils/PlUtils.kt" beforeDir="false" afterPath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/utils/PlUtils.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/workpoints/ContainerWorkPoints.kt" beforeDir="false" afterPath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/workpoints/ContainerWorkPoints.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/workpoints/WorkPoint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/workpoints/WorkPoint.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MyInputProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MyInputProcessor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_desktop/src/main/resources/map/map.tmx" beforeDir="false" afterPath="$PROJECT_DIR$/visual_desktop/src/main/resources/map/map.tmx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -136,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591113521422</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="v 1.00 working food, work, sleep">
+      <created>1591122209279</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1591122209279</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -158,6 +162,7 @@
     <MESSAGE value="v 0.03" />
     <MESSAGE value="v 0.04" />
     <MESSAGE value="v 0.05" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 0.05" />
+    <MESSAGE value="v 1.00 working food, work, sleep" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.00 working food, work, sleep" />
   </component>
 </project>

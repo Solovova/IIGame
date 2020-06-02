@@ -5,6 +5,7 @@ import com.badlogic.gdx.Screen
 import com.badlogic.gdx.graphics.GL20
 import com.badlogic.gdx.graphics.g2d.Batch
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
+import com.solovova.iigame.visual.core.actors.ActorButtons
 import com.solovova.iigame.visual.core.actors.ActorHud
 import com.solovova.iigame.visual.core.actors.ActorMap
 import com.solovova.iigame.visual.core.rescontainer.ResContainer
@@ -13,6 +14,7 @@ class MainGameScreen(rc: ResContainer) : Screen {
     private val actorMap:ActorMap = ActorMap(rc)
     private val actorHud:ActorHud = ActorHud(rc)
     private val spriteBatch: Batch = SpriteBatch()
+    private val actorButtons: ActorButtons = ActorButtons(rc)
 
 
     override fun resize(width: Int, height: Int) {}
@@ -31,9 +33,8 @@ class MainGameScreen(rc: ResContainer) : Screen {
         Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT)
 
         actorMap.draw()
-        //spriteBatch.begin()
         actorHud.draw()
-        //spriteBatch.end()
+        actorButtons.draw()
     }
 
     override fun dispose() {
