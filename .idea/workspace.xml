@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="589aa6f0-d291-4768-952c-108e2a323804" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorButtons.kt" afterDir="false" />
+    <list default="true" id="61a3ade2-340d-43b0-a2a7-49de22374ccb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/engine_player/engine_player.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_core/visual_core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_desktop/visual_desktop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/engine_player/IIGame-engine_player.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/visual_core/IIGame-visual_core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/visual_desktop/IIGame-visual_desktop.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IIGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IIGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/player/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/player/Player.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MyInputProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MyInputProcessor.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorMap.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,36 +32,20 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <projects_view>
-          <tree_state>
-            <expand />
-            <select />
-          </tree_state>
-        </projects_view>
+        <projects_view />
       </state>
     </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Enum" />
-        <option value="Kotlin Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="C:\00prg\IIGame\.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="ProjectId" id="1clM6kp7GSVTV7bJW2yN5ZBf64T" />
+  <component name="ProjectId" id="1cmL7ama253BTXTisrVafFdFUTx" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.3852941" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -65,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Kotlin.DesktopStarter">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -73,8 +67,59 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DesktopStarter" type="JetRunConfigurationType" nameIsGenerated="true">
-      <module name="IIGame-visual_desktop" />
+    <configuration name="android" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="android" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DesktopStarter" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="visual_desktop" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -86,61 +131,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Kotlin.DesktopStarter" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="589aa6f0-d291-4768-952c-108e2a323804" name="Default Changelist" comment="" />
-      <created>1591098554169</created>
+      <changelist id="61a3ade2-340d-43b0-a2a7-49de22374ccb" name="Default Changelist" comment="" />
+      <created>1591128655815</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1591098554169</updated>
+      <updated>1591128655815</updated>
     </task>
-    <task id="LOCAL-00001" summary="v 0.01 AndroidStudio">
-      <created>1591099337570</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1591099337570</updated>
-    </task>
-    <task id="LOCAL-00002" summary="v 0.02">
-      <created>1591101689578</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1591101689578</updated>
-    </task>
-    <task id="LOCAL-00003" summary="v 0.03">
-      <created>1591102996857</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1591102996857</updated>
-    </task>
-    <task id="LOCAL-00004" summary="v 0.04">
-      <created>1591103923848</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1591103923848</updated>
-    </task>
-    <task id="LOCAL-00005" summary="v 0.05">
-      <created>1591113521422</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1591113521422</updated>
-    </task>
-    <task id="LOCAL-00006" summary="v 1.00 working food, work, sleep">
-      <created>1591122209279</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1591122209279</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -155,14 +162,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="v 0.01 AndroidStudio" />
-    <MESSAGE value="v 0.02" />
-    <MESSAGE value="v 0.03" />
-    <MESSAGE value="v 0.04" />
-    <MESSAGE value="v 0.05" />
-    <MESSAGE value="v 1.00 working food, work, sleep" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.00 working food, work, sleep" />
   </component>
 </project>

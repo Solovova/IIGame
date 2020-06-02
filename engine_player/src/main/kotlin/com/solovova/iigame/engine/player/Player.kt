@@ -125,7 +125,7 @@ class Player(private val collision: Array<Array<Int>>) {
             } else {
                 for (key in work.muteStats.keys) {
                     if (((work.muteStats[key] ?: 0f) < 0f) &&
-                            (stats[key] ?: 0f) - (work.muteStats[key] ?: 0f) < 0f
+                            (stats[key] ?: 0f) + (work.muteStats[key] ?: 0f) < 0f
                     ) {
                         println("Can't do it not enough ${key}!!!")
                         return
@@ -134,6 +134,7 @@ class Player(private val collision: Array<Array<Int>>) {
 
                 for (key in work.muteStats.keys) {
                     stats[key] = (stats[key] ?: 0f) + (work.muteStats[key] ?: 0f)
+                    if (key in setOf("Food","Pep","Health")) stats[key] = PlUtils.putInRange((stats[key]?:0f), 0f, 100f)
                 }
             }
         }

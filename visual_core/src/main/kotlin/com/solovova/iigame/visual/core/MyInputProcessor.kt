@@ -25,7 +25,7 @@ class MyInputProcessor(private val rc: ResContainer) : InputAdapter() {
     }
 
     override fun touchDown(screenX: Int, screenY: Int, pointer: Int, button: Int): Boolean {
-        val offset = 150
+        val offset = 300
         if (screenX<offset) {
             rc.player.doCommand(PlayerCommands.Left)
             return true
