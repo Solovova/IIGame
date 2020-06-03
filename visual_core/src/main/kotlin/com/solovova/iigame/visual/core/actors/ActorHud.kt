@@ -35,14 +35,7 @@ class ActorHud(private val rc: ResContainer) {
         //renderer.setView(cam)
 
         Gdx.gl.glViewport(0,Gdx.graphics.height-HUD_HEIGHT,Gdx.graphics.width,HUD_HEIGHT)
-        var offsetYRect = 10f+HUD_HEIGHT-50f
-        var offsetYText = 31f+HUD_HEIGHT-50f
-        val steep = 32f
 
-        val offsetX1 = 100f
-        val offsetX2 = 180f
-        val offsetX3 = 330f
-        val offsetX4 = 520f
 
 
         val uiMatrix = Matrix4()
@@ -56,21 +49,31 @@ class ActorHud(private val rc: ResContainer) {
             rc.player.getHealth()>Player.HEALTH_VERY_LOW -> Color.YELLOW
             else -> Color.RED
         }
-        shapeRenderer.rect(offsetX1,offsetYRect,200f*rc.player.getHealth()/100f,26f)
+
+        var offsetYRect = HUD_HEIGHT-40f
+        var offsetYText = HUD_HEIGHT-25f
+        val steep = 28f
+
+        val offsetX1 = 80f
+        val offsetX2 = 170f
+        val offsetX3 = 300f
+        val offsetX4 = 480f
+
+        shapeRenderer.rect(offsetX1,offsetYRect,200f*rc.player.getHealth()/100f,20f)
         offsetYRect -= steep
         shapeRenderer.color = when {
             rc.player.getPep()>=Player.PEP_UP -> Color.GREEN
             rc.player.getPep()>=Player.PEP_LOW -> Color.YELLOW
             else -> Color.RED
         }
-        shapeRenderer.rect(offsetX1,offsetYRect,200f*rc.player.getPep()/100f,26f)
+        shapeRenderer.rect(offsetX1,offsetYRect,200f*rc.player.getPep()/100f,20f)
         offsetYRect -= steep
         shapeRenderer.color = when {
             rc.player.getFood()>=Player.FOOD_UP -> Color.GREEN
             rc.player.getFood()>=Player.FOOD_LOW -> Color.YELLOW
             else -> Color.RED
         }
-        shapeRenderer.rect(offsetX1,offsetYRect,200f*rc.player.getFood()/100f,26f)
+        shapeRenderer.rect(offsetX1,offsetYRect,200f*rc.player.getFood()/100f,20f)
 
         shapeRenderer.end()
 
@@ -93,7 +96,7 @@ class ActorHud(private val rc: ResContainer) {
         font.draw(spriteBatch,"Money: ${rc.player.getMoney().toInt()}",offsetX3,offsetYText)
 
 
-        offsetYText = 31f+HUD_HEIGHT-50f
+        offsetYText = HUD_HEIGHT-19f
         val work = rc.player.works.getByCoordinate(rc.player.getX(),rc.player.getY())
         if (work!=null) {
             font.draw(spriteBatch,work.describe,offsetX4,offsetYText)
@@ -111,7 +114,7 @@ class ActorHud(private val rc: ResContainer) {
     init {
         val generator = FreeTypeFontGenerator(Gdx.files.internal("fonts/proximanova.ttf"))
         val parameter = FreeTypeFontGenerator.FreeTypeFontParameter()
-        parameter.size = 26
+        parameter.size = 18
         font = generator.generateFont(parameter)
         font.setColor(0.0f, 0.0f, 0.0f, 1.0f)
         generator.dispose()
