@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61a3ade2-340d-43b0-a2a7-49de22374ccb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/util/PlUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorButtons.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorCharacter.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorMap.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_desktop/src/main/kotlin/com/solovova/iigame/visual/desktop/DesktopStarter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_desktop/src/main/kotlin/com/solovova/iigame/visual/desktop/DesktopStarter.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -146,6 +140,14 @@
       <option name="presentableId" value="Default" />
       <updated>1591128655815</updated>
     </task>
+    <task id="LOCAL-00001" summary="v 1.1">
+      <created>1591210243841</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591210243841</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -160,5 +162,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v 1.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 1.1" />
   </component>
 </project>

@@ -8,6 +8,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
 import com.badlogic.gdx.math.Matrix4
+import com.badlogic.gdx.math.Vector2
+import com.badlogic.gdx.math.Vector3
 import com.solovova.iigame.engine.player.Player
 import com.solovova.iigame.visual.core.rescontainer.ResContainer
 
@@ -16,16 +18,25 @@ class ActorHud(private val rc: ResContainer) {
         const val HUD_HEIGHT = 150
     }
 
-    //private val cam: OrthographicCamera = OrthographicCamera()
+    private val cam: OrthographicCamera = OrthographicCamera()
     private val shapeRenderer:ShapeRenderer = ShapeRenderer()
     private val spriteBatch:SpriteBatch = SpriteBatch()
 
     private var font: BitmapFont
 
+    init {
+        cam.setToOrtho(false, (34*16).toFloat(),
+                (34*16).toFloat())
+        cam.position.set(Vector2((34*16).toFloat()/2,(34*16).toFloat()/2),0f)
+    }
+
     fun draw() {
-        Gdx.gl.glViewport(0,Gdx.graphics.height-200,Gdx.graphics.width,200)
-        var offsetYRect = 10f+HUD_HEIGHT
-        var offsetYText = 31f+HUD_HEIGHT
+        //cam.update()
+        //renderer.setView(cam)
+
+        Gdx.gl.glViewport(0,Gdx.graphics.height-HUD_HEIGHT,Gdx.graphics.width,HUD_HEIGHT)
+        var offsetYRect = 10f+HUD_HEIGHT-50f
+        var offsetYText = 31f+HUD_HEIGHT-50f
         val steep = 32f
 
         val offsetX1 = 100f
@@ -35,7 +46,7 @@ class ActorHud(private val rc: ResContainer) {
 
 
         val uiMatrix = Matrix4()
-        uiMatrix.setToOrtho2D(0f, 0f, Gdx.graphics.width.toFloat(), 200f)
+        uiMatrix.setToOrtho2D(0f, 0f, Gdx.graphics.width.toFloat(), HUD_HEIGHT.toFloat())
         shapeRenderer.projectionMatrix = uiMatrix
         spriteBatch.projectionMatrix = uiMatrix
 
@@ -82,7 +93,7 @@ class ActorHud(private val rc: ResContainer) {
         font.draw(spriteBatch,"Money: ${rc.player.getMoney().toInt()}",offsetX3,offsetYText)
 
 
-        offsetYText = 31f+HUD_HEIGHT
+        offsetYText = 31f+HUD_HEIGHT-50f
         val work = rc.player.works.getByCoordinate(rc.player.getX(),rc.player.getY())
         if (work!=null) {
             font.draw(spriteBatch,work.describe,offsetX4,offsetYText)
