@@ -10,7 +10,7 @@ import com.solovova.iigame.visual.core.rescontainer.ResContainer
 import com.solovova.iigame.visual.core.util.PlUtils
 
 
-class ActorMap(private val rc: ResContainer): Actor() {
+class ActorMap(private val rc: ResContainer) : Actor() {
     companion object {
         const val MAP_BORDER = 16
         const val MAP_BITS_PES_SQUARE = 16
@@ -24,13 +24,15 @@ class ActorMap(private val rc: ResContainer): Actor() {
     private val firstLayerInd: IntArray
     private val secondLayerInd: IntArray
 
-    private val worldBoxWidth = 34
-    private val worldBoxHeight = 34
+    private val worldBoxWidth: Int
+    private val worldBoxHeight: Int
 
     init {
+        worldBoxWidth = (Gdx.graphics.width.toFloat() / (MAP_BITS_PES_SQUARE.toFloat() * 2f)).toInt()
+        worldBoxHeight = (worldBoxWidth.toFloat() * (Gdx.graphics.height - ActorHud.HUD_HEIGHT).toFloat() / Gdx.graphics.width.toFloat()).toInt()
 
-        cam.setToOrtho(false, (worldBoxWidth*MAP_BITS_PES_SQUARE).toFloat(),
-                (worldBoxHeight*MAP_BITS_PES_SQUARE).toFloat())
+        cam.setToOrtho(false, (worldBoxWidth * MAP_BITS_PES_SQUARE).toFloat(),
+                (worldBoxHeight * MAP_BITS_PES_SQUARE).toFloat())
         renderer = OrthogonalTiledMapRenderer(rc.rcMap.getTiledMap(), 1f)
 
         val mapLayers: MapLayers = rc.rcMap.getTiledMap().layers
@@ -55,22 +57,23 @@ class ActorMap(private val rc: ResContainer): Actor() {
         cam.update()
         renderer.setView(cam)
 
-        Gdx.gl.glViewport(MAP_BORDER, MAP_BORDER,Gdx.graphics.width- MAP_BORDER*2,Gdx.graphics.height- MAP_BORDER*2-ActorHud.HUD_HEIGHT)
+        Gdx.gl.glViewport(MAP_BORDER, MAP_BORDER, Gdx.graphics.width - MAP_BORDER * 2, Gdx.graphics.height - MAP_BORDER * 2 - ActorHud.HUD_HEIGHT)
 
         renderer.render(firstLayerInd)
         renderer.batch.begin()
-        renderer.batch.draw(textureCharacter, (rc.player.getX()* MAP_BITS_PES_SQUARE).toFloat(),
-                (rc.player.getY()*MAP_BITS_PES_SQUARE).toFloat(),
+        renderer.batch.draw(textureCharacter, (rc.player.getX() * MAP_BITS_PES_SQUARE).toFloat(),
+                (rc.player.getY() * MAP_BITS_PES_SQUARE).toFloat(),
                 MAP_BITS_PES_SQUARE.toFloat(),
                 MAP_BITS_PES_SQUARE.toFloat())
         renderer.batch.end()
         renderer.render(secondLayerInd)
     }
 
-    private fun camSetPosition(){
-        val posX = PlUtils.putInRange(rc.player.getX(),worldBoxWidth/2,rc.rcMap.mapWith-worldBoxWidth/2)
-        val posY = PlUtils.putInRange(rc.player.getY(),worldBoxHeight/2,rc.rcMap.mapHeight-worldBoxHeight/2)
-
-        cam.position.set((posX* MAP_BITS_PES_SQUARE).toFloat(), (posY* MAP_BITS_PES_SQUARE).toFloat(),0f)
+    private fun camSetPosition() {
+        val posX = if (worldBoxWidth < rc.rcMap.mapWith) PlUtils.putInRange(rc.player.getX(), worldBoxWidth / 2, rc.rcMap.mapWith - worldBoxWidth / 2)
+        else (cam.position.x/MAP_BITS_PES_SQUARE).toInt()
+        val posY = if (worldBoxHeight < rc.rcMap.mapHeight) PlUtils.putInRange(rc.player.getY(), worldBoxHeight / 2, rc.rcMap.mapHeight - worldBoxHeight / 2)
+        else (cam.position.y/MAP_BITS_PES_SQUARE).toInt()
+        cam.position.set((posX * MAP_BITS_PES_SQUARE).toFloat(), (posY * MAP_BITS_PES_SQUARE).toFloat(), 0f)
     }
 }

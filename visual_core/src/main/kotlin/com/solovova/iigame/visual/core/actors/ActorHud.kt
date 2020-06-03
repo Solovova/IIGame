@@ -7,9 +7,6 @@ import com.badlogic.gdx.graphics.g2d.BitmapFont
 import com.badlogic.gdx.graphics.g2d.SpriteBatch
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer
-import com.badlogic.gdx.math.Matrix4
-import com.badlogic.gdx.math.Vector2
-import com.badlogic.gdx.math.Vector3
 import com.solovova.iigame.engine.player.Player
 import com.solovova.iigame.visual.core.rescontainer.ResContainer
 
@@ -25,8 +22,8 @@ class ActorHud(private val rc: ResContainer) {
     private var font: BitmapFont
 
     init {
-        val camWith = 720f
-        val camHeight = 150f
+        val camWith = Gdx.graphics.width.toFloat()
+        val camHeight = HUD_HEIGHT.toFloat()
         cam.setToOrtho(false, camWith, camHeight)
         cam.position.set(camWith/2,camHeight/2,0f)
     }
@@ -37,14 +34,8 @@ class ActorHud(private val rc: ResContainer) {
         Gdx.gl.glViewport(0,Gdx.graphics.height-HUD_HEIGHT,Gdx.graphics.width,HUD_HEIGHT)
 
         cam.update()
-        //renderer.setView(cam)
         shapeRenderer.projectionMatrix = cam.combined
         spriteBatch.projectionMatrix = cam.combined
-
-//        val uiMatrix = Matrix4()
-//        uiMatrix.setToOrtho2D(0f, 0f, Gdx.graphics.width.toFloat(), HUD_HEIGHT.toFloat())
-//        shapeRenderer.projectionMatrix = uiMatrix
-//        spriteBatch.projectionMatrix = uiMatrix
 
         shapeRenderer.begin(ShapeRenderer.ShapeType.Filled)
         shapeRenderer.color = when {
