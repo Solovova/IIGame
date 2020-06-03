@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61a3ade2-340d-43b0-a2a7-49de22374ccb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/engine_player/engine_player.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visual_core/visual_core.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visual_desktop/visual_desktop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/engine_player/IIGame-engine_player.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/visual_core/IIGame-visual_core.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/visual_desktop/IIGame-visual_desktop.iml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/util/PlUtils.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IIGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IIGame.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/player/Player.kt" beforeDir="false" afterPath="$PROJECT_DIR$/engine_player/src/main/kotlin/com/solovova/iigame/engine/player/Player.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MyInputProcessor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MyInputProcessor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGameScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorButtons.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorCharacter.kt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorHud.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorMap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/actors/ActorMap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_desktop/src/main/kotlin/com/solovova/iigame/visual/desktop/DesktopStarter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_desktop/src/main/kotlin/com/solovova/iigame/visual/desktop/DesktopStarter.kt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +39,11 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.3852941" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.solovova.iigame.visual.core.util" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

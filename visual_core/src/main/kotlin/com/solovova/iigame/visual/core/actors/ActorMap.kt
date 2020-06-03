@@ -2,26 +2,35 @@ package com.solovova.iigame.visual.core.actors
 
 import com.badlogic.gdx.Gdx
 import com.badlogic.gdx.graphics.OrthographicCamera
-import com.badlogic.gdx.graphics.g2d.Batch
+import com.badlogic.gdx.graphics.Texture
 import com.badlogic.gdx.maps.MapLayers
 import com.badlogic.gdx.maps.tiled.renderers.OrthogonalTiledMapRenderer
 import com.badlogic.gdx.scenes.scene2d.Actor
-import com.solovova.iigame.visual.core.MyInputProcessor
 import com.solovova.iigame.visual.core.rescontainer.ResContainer
+import com.solovova.iigame.visual.core.util.PlUtils
+
 
 class ActorMap(private val rc: ResContainer): Actor() {
-    private val character: ActorCharacter
+    companion object {
+        const val MAP_BORDER = 16
+        const val MAP_BITS_PES_SQUARE = 16
+    }
 
-    private val cam: OrthographicCamera
+    private val textureCharacter: Texture = Texture("char_face.png")
+
+    private val cam: OrthographicCamera = OrthographicCamera()
     private val renderer: OrthogonalTiledMapRenderer
 
     private val firstLayerInd: IntArray
     private val secondLayerInd: IntArray
 
+    private val worldBoxWidth = 34
+    private val worldBoxHeight = 34
+
     init {
 
-        cam = OrthographicCamera()
-        cam.setToOrtho(false, 16*16f, 16*34f)
+        cam.setToOrtho(false, (worldBoxWidth*MAP_BITS_PES_SQUARE).toFloat(),
+                (worldBoxHeight*MAP_BITS_PES_SQUARE).toFloat())
         renderer = OrthogonalTiledMapRenderer(rc.rcMap.getTiledMap(), 1f)
 
         val mapLayers: MapLayers = rc.rcMap.getTiledMap().layers
@@ -38,34 +47,37 @@ class ActorMap(private val rc: ResContainer): Actor() {
                 mapLayers.getIndex("Door/Roof"),
                 mapLayers.getIndex("Roof object")
         )
-
-        character = ActorCharacter(rc)
     }
 
     fun draw() {
-        canSetPosition()
+        camSetPosition()
 
         cam.update()
         renderer.setView(cam)
 
-        Gdx.gl.glViewport(16,16,Gdx.graphics.width-32,Gdx.graphics.height-32-200)
+        Gdx.gl.glViewport(MAP_BORDER, MAP_BORDER,Gdx.graphics.width- MAP_BORDER*2,Gdx.graphics.height- MAP_BORDER*2-ActorHud.HUD_HEIGHT)
+
+        val uiMatrix = cam.combined.cpy()
+//        uiMatrix.setToOrtho2D(MAP_BORDER.toFloat(),
+//                MAP_BORDER.toFloat(),
+//                (Gdx.graphics.width- MAP_BORDER*2).toFloat(),
+//                (Gdx.graphics.height- MAP_BORDER*2-ActorHud.HUD_HEIGHT).toFloat())
+//        renderer.batch.projectionMatrix = uiMatrix
+
         renderer.render(firstLayerInd)
         renderer.batch.begin()
-        character.draw(renderer.batch,1f)
+        renderer.batch.draw(textureCharacter, (rc.player.getX()* MAP_BITS_PES_SQUARE).toFloat(),
+                (rc.player.getY()*MAP_BITS_PES_SQUARE).toFloat(),
+                MAP_BITS_PES_SQUARE.toFloat(),
+                MAP_BITS_PES_SQUARE.toFloat())
         renderer.batch.end()
         renderer.render(secondLayerInd)
-
     }
 
-    private fun canSetPosition(){
-        var posX = rc.player.getX()
-        if (posX<12) posX=8
-        if (posX>(rc.rcMap.mapWith-8)) posX=rc.rcMap.mapWith-8
+    private fun camSetPosition(){
+        val posX = PlUtils.putInRange(rc.player.getX(),worldBoxWidth/2,rc.rcMap.mapWith-worldBoxWidth/2)
+        val posY = PlUtils.putInRange(rc.player.getY(),worldBoxHeight/2,rc.rcMap.mapHeight-worldBoxHeight/2)
 
-        var posY = rc.player.getY()
-        if (posY<15) posY=15
-        if (posY>(rc.rcMap.mapHeight-17)) posY=rc.rcMap.mapHeight-17
-
-        cam.position.set(posX*16f, posY*16f,0f)
+        cam.position.set((posX* MAP_BITS_PES_SQUARE).toFloat(), (posY* MAP_BITS_PES_SQUARE).toFloat(),0f)
     }
 }

@@ -13,7 +13,7 @@ object DesktopStarter {
         cfg.title = "IIGame"
         cfg.useGL30 = true
         cfg.width = 720
-        cfg.height = 1280
+        cfg.height = 900
         LwjglApplication(MainGame(), cfg)
     }
 }
