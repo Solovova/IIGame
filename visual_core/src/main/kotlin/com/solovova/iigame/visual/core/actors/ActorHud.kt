@@ -25,23 +25,26 @@ class ActorHud(private val rc: ResContainer) {
     private var font: BitmapFont
 
     init {
-        cam.setToOrtho(false, (34*16).toFloat(),
-                (34*16).toFloat())
-        cam.position.set(Vector2((34*16).toFloat()/2,(34*16).toFloat()/2),0f)
+        val camWith = 720f
+        val camHeight = 150f
+        cam.setToOrtho(false, camWith, camHeight)
+        cam.position.set(camWith/2,camHeight/2,0f)
     }
 
     fun draw() {
-        //cam.update()
-        //renderer.setView(cam)
+
 
         Gdx.gl.glViewport(0,Gdx.graphics.height-HUD_HEIGHT,Gdx.graphics.width,HUD_HEIGHT)
 
+        cam.update()
+        //renderer.setView(cam)
+        shapeRenderer.projectionMatrix = cam.combined
+        spriteBatch.projectionMatrix = cam.combined
 
-
-        val uiMatrix = Matrix4()
-        uiMatrix.setToOrtho2D(0f, 0f, Gdx.graphics.width.toFloat(), HUD_HEIGHT.toFloat())
-        shapeRenderer.projectionMatrix = uiMatrix
-        spriteBatch.projectionMatrix = uiMatrix
+//        val uiMatrix = Matrix4()
+//        uiMatrix.setToOrtho2D(0f, 0f, Gdx.graphics.width.toFloat(), HUD_HEIGHT.toFloat())
+//        shapeRenderer.projectionMatrix = uiMatrix
+//        spriteBatch.projectionMatrix = uiMatrix
 
         shapeRenderer.begin(ShapeRenderer.ShapeType.Filled)
         shapeRenderer.color = when {

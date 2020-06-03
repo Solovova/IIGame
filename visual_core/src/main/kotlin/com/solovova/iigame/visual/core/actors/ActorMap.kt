@@ -57,13 +57,6 @@ class ActorMap(private val rc: ResContainer): Actor() {
 
         Gdx.gl.glViewport(MAP_BORDER, MAP_BORDER,Gdx.graphics.width- MAP_BORDER*2,Gdx.graphics.height- MAP_BORDER*2-ActorHud.HUD_HEIGHT)
 
-        val uiMatrix = cam.combined.cpy()
-//        uiMatrix.setToOrtho2D(MAP_BORDER.toFloat(),
-//                MAP_BORDER.toFloat(),
-//                (Gdx.graphics.width- MAP_BORDER*2).toFloat(),
-//                (Gdx.graphics.height- MAP_BORDER*2-ActorHud.HUD_HEIGHT).toFloat())
-//        renderer.batch.projectionMatrix = uiMatrix
-
         renderer.render(firstLayerInd)
         renderer.batch.begin()
         renderer.batch.draw(textureCharacter, (rc.player.getX()* MAP_BITS_PES_SQUARE).toFloat(),
