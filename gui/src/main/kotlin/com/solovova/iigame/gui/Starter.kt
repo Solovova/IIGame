@@ -1,10 +1,8 @@
 package com.solovova.iigame.gui
 
 import com.solovova.iigame.engine.player.Player
-import com.solovova.iigame.gui.empty.MainEmpty
 import com.solovova.iigame.visual.core.MainGame
 import com.solovova.iigame.visual.desktop.DesktopStarterThread
-import javafx.application.Application
 
 
 class Starter {

@@ -1,21 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd4176ff-74f7-4044-b26a-508e6a710ec4" name="Default Changelist" comment="v 3.01 works connections gui -&gt; player">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinScripting.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/MainGUI.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/Starter.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/MainEmpty.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/controller/MainControllerEmpty.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/visual_desktop/src/main/kotlin/com/solovova/iigame/visual/desktop/DesktopStarterThread.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/gui/gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/gui/gui.iml" afterDir="false" />
+    <list default="true" id="bd4176ff-74f7-4044-b26a-508e6a710ec4" name="Default Changelist" comment="v 3.02">
+      <change afterPath="$PROJECT_DIR$/gui/src/main/resources/main.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/gui/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/Main.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/controller/MainController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/controller/MainController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGame.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_desktop/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/visual_desktop/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/Starter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/Starter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/MainEmpty.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/MainWithOutXML.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/controller/MainControllerEmpty.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/src/main/resources/empty.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +165,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591290988212</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="v 3.01 works connections gui -&gt; player">
+      <created>1591299484734</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591299484734</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -191,32 +191,37 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="v 3.00 added gui" />
     <MESSAGE value="v 3.01 works connections gui -&gt; player" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 3.01 works connections gui -&gt; player" />
+    <MESSAGE value="v 3.02" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 3.02" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="614" y="113" key="CommitChangelistDialog2" timestamp="1591299455749">
+    <state x="614" y="113" key="CommitChangelistDialog2" timestamp="1591299782584">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="113" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455749" />
-    <state width="1860" height="278" key="GridCell.Tab.0.bottom" timestamp="1591299455824">
+    <state x="614" y="113" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299782584" />
+    <state width="1860" height="278" key="GridCell.Tab.0.bottom" timestamp="1591299785240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455824" />
-    <state width="1860" height="278" key="GridCell.Tab.0.center" timestamp="1591299455824">
+    <state width="1860" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299785240" />
+    <state width="1860" height="278" key="GridCell.Tab.0.center" timestamp="1591299785240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455824" />
-    <state width="1860" height="278" key="GridCell.Tab.0.left" timestamp="1591299455824">
+    <state width="1860" height="278" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299785240" />
+    <state width="1860" height="278" key="GridCell.Tab.0.left" timestamp="1591299785239">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455824" />
-    <state width="1860" height="278" key="GridCell.Tab.0.right" timestamp="1591299455824">
+    <state width="1860" height="278" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299785239" />
+    <state width="1860" height="278" key="GridCell.Tab.0.right" timestamp="1591299785240">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1860" height="278" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455824" />
+    <state width="1860" height="278" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299785240" />
     <state x="732" y="231" key="RollbackChangesDialog" timestamp="1591292480028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="732" y="231" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591292480028" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1591299491929">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299491929" />
   </component>
 </project>
