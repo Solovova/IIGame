@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="61a3ade2-340d-43b0-a2a7-49de22374ccb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/desktop_gui/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desktop_gui/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desktop_gui/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desktop_gui/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desktop_gui/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/desktop_gui/settings.gradle.kts" afterDir="false" />
+    <list default="true" id="bd4176ff-74f7-4044-b26a-508e6a710ec4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/modules/engine_player/engine_player.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/gui/gui.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/visual_core/visual_core.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules/visual_desktop/visual_desktop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/desktop_gui/desktop_gui.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/IIGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IIGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop_gui/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop_gui/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop_gui/build.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop_gui/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop_gui/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/desktop_gui/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine_player/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/engine_player/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/engine_player/engine_player.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/visual_core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_desktop/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/visual_desktop/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_desktop/visual_desktop.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,28 +43,16 @@
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Kotlin Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1cmL7ama253BTXTisrVafFdFUTx" />
+  <component name="ProjectId" id="1crcxqcCqIrk51hsvWRPSTOaoGu" />
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.3852941" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
-      <recent name="com.solovova.iigame.visual.core.util" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,61 +66,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Kotlin.DesktopStarter">
+  <component name="RunManager" selected="Kotlin.Main">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <method v="2">
-        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="android" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
-      <module name="android" />
-      <option name="DEPLOY" value="true" />
-      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
-      <option name="DEPLOY_AS_INSTANT" value="false" />
-      <option name="ARTIFACT_NAME" value="" />
-      <option name="PM_INSTALL_OPTIONS" value="" />
-      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
-      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
-      <option name="MODE" value="default_activity" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
-      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
-      <option name="FORCE_STOP_RUNNING_APP" value="true" />
-      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
-      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
-      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
-      <option name="DEBUGGER_TYPE" value="Auto" />
-      <Auto>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Auto>
-      <Hybrid>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Hybrid>
-      <Java />
-      <Native>
-        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
-        <option name="SHOW_STATIC_VARS" value="true" />
-        <option name="WORKING_DIR" value="" />
-        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
-        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
-      </Native>
-      <Profilers>
-        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
-        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
-      </Profilers>
-      <option name="DEEP_LINK" value="" />
-      <option name="ACTIVITY_CLASS" value="" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
@@ -136,8 +87,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="gui" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.solovova.iigame.gui.empty.Main" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Main" />
         <item itemvalue="Kotlin.DesktopStarter" />
       </list>
     </recent_temporary>
@@ -147,41 +112,12 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="61a3ade2-340d-43b0-a2a7-49de22374ccb" name="Default Changelist" comment="" />
-      <created>1591128655815</created>
+      <changelist id="bd4176ff-74f7-4044-b26a-508e6a710ec4" name="Default Changelist" comment="" />
+      <created>1591290402352</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1591128655815</updated>
+      <updated>1591290402352</updated>
     </task>
-    <task id="LOCAL-00001" summary="v 1.1">
-      <created>1591210243841</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1591210243841</updated>
-    </task>
-    <task id="LOCAL-00002" summary="v 1.2">
-      <created>1591216325763</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1591216325763</updated>
-    </task>
-    <task id="LOCAL-00003" summary="v 1.3 set hud on camera">
-      <created>1591217879766</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1591217879766</updated>
-    </task>
-    <task id="LOCAL-00004" summary="v 1.4">
-      <created>1591218956991</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1591218956991</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -196,12 +132,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="v 1.1" />
-    <MESSAGE value="v 1.2" />
-    <MESSAGE value="v 1.3 set hud on camera" />
-    <MESSAGE value="v 1.4" />
-    <option name="LAST_COMMIT_MESSAGE" value="v 1.4" />
   </component>
 </project>

@@ -9,4 +9,4 @@
 
 rootProject.name = "IIGame"
 
-include ("visual_core","visual_desktop","engine_player","desktop_gui")
+include ("visual_core","visual_desktop","engine_player","gui")

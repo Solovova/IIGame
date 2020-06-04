@@ -3,10 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IIGame.iml" filepath="$PROJECT_DIR$/IIGame.iml" group="IIGame" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/desktop_gui/desktop_gui.iml" filepath="$PROJECT_DIR$/.idea/modules/desktop_gui/desktop_gui.iml" group="IIGame/desktop_gui" />
-      <module fileurl="file://$PROJECT_DIR$/engine_player/engine_player.iml" filepath="$PROJECT_DIR$/engine_player/engine_player.iml" group="IIGame/engine_player" />
-      <module fileurl="file://$PROJECT_DIR$/visual_core/visual_core.iml" filepath="$PROJECT_DIR$/visual_core/visual_core.iml" group="IIGame/visual_core" />
-      <module fileurl="file://$PROJECT_DIR$/visual_desktop/visual_desktop.iml" filepath="$PROJECT_DIR$/visual_desktop/visual_desktop.iml" group="IIGame/visual_desktop" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/engine_player/engine_player.iml" filepath="$PROJECT_DIR$/.idea/modules/engine_player/engine_player.iml" group="IIGame/engine_player" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/gui/gui.iml" filepath="$PROJECT_DIR$/.idea/modules/gui/gui.iml" group="IIGame/gui" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/visual_core/visual_core.iml" filepath="$PROJECT_DIR$/.idea/modules/visual_core/visual_core.iml" group="IIGame/visual_core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/visual_desktop/visual_desktop.iml" filepath="$PROJECT_DIR$/.idea/modules/visual_desktop/visual_desktop.iml" group="IIGame/visual_desktop" />
     </modules>
   </component>
 </project>
