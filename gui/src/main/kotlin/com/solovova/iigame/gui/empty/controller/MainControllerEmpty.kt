@@ -6,7 +6,7 @@ import javafx.scene.control.Button
 /**
  * Created by naik on 06.02.16.
  */
-class MainController {
+class MainControllerEmpty {
 
 //    @FXML
 //    lateinit var testButton: Button

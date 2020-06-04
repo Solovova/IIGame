@@ -1,31 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd4176ff-74f7-4044-b26a-508e6a710ec4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules/engine_player/engine_player.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/gui/gui.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/visual_core/visual_core.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/visual_desktop/visual_desktop.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/desktop_gui/desktop_gui.iml" beforeDir="false" />
+    <list default="true" id="bd4176ff-74f7-4044-b26a-508e6a710ec4" name="Default Changelist" comment="v 3.01 works connections gui -&gt; player">
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinScripting.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/MainGUI.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/Starter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/MainEmpty.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/controller/MainControllerEmpty.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/visual_desktop/src/main/kotlin/com/solovova/iigame/visual/desktop/DesktopStarterThread.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/gui/gui.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/gui/gui.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/IIGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/IIGame.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop_gui/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop_gui/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop_gui/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop_gui/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop_gui/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/desktop_gui/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine_player/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/engine_player/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/engine_player/engine_player.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_core/visual_core.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/gui/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/Main.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/empty/controller/MainController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui/controller/MainController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGame.kt" beforeDir="false" afterPath="$PROJECT_DIR$/visual_core/src/main/kotlin/com/solovova/iigame/visual/core/MainGame.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/visual_desktop/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/visual_desktop/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/visual_desktop/visual_desktop.iml" beforeDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,30 +34,44 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1crcxqcCqIrk51hsvWRPSTOaoGu" />
+  <component name="ProjectViewState">
+    <option name="compactDirectories" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gui/src/main/kotlin/com/solovova/iigame/gui" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.3852941" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.solovova.iigame.gui" />
+      <recent name="com.solovova.iigame.gui.empty" />
+    </key>
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.solovova.iigame.gui" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\00prg\IIGame\gui\src\main\kotlin\com\solovova\iigame\gui" />
+    </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Main">
+  <component name="RunManager" selected="Kotlin.Starter (1)">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -87,14 +92,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="MainEmpty" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="gui" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="com.solovova.iigame.gui.empty.Main" />
+      <option name="MAIN_CLASS_NAME" value="com.solovova.iigame.gui.empty.MainEmpty" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainGUI" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="gui" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.solovova.iigame.gui.MainGUI" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Starter (1)" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="gui" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.solovova.iigame.gui.Starter" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Starter" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="visual_desktop" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="com.solovova.iigame.visual.desktop.Starter" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,7 +146,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Kotlin.Main" />
+        <item itemvalue="Kotlin.Starter (1)" />
+        <item itemvalue="Kotlin.MainGUI" />
+        <item itemvalue="Kotlin.MainEmpty" />
+        <item itemvalue="Kotlin.Starter" />
         <item itemvalue="Kotlin.DesktopStarter" />
       </list>
     </recent_temporary>
@@ -118,6 +165,14 @@
       <option name="presentableId" value="Default" />
       <updated>1591290402352</updated>
     </task>
+    <task id="LOCAL-00001" summary="v 3.00 added gui">
+      <created>1591290988212</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591290988212</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,5 +187,36 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="v 3.00 added gui" />
+    <MESSAGE value="v 3.01 works connections gui -&gt; player" />
+    <option name="LAST_COMMIT_MESSAGE" value="v 3.01 works connections gui -&gt; player" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="614" y="113" key="CommitChangelistDialog2" timestamp="1591299455749">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="614" y="113" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455749" />
+    <state width="1860" height="278" key="GridCell.Tab.0.bottom" timestamp="1591299455824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="278" key="GridCell.Tab.0.bottom/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455824" />
+    <state width="1860" height="278" key="GridCell.Tab.0.center" timestamp="1591299455824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="278" key="GridCell.Tab.0.center/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455824" />
+    <state width="1860" height="278" key="GridCell.Tab.0.left" timestamp="1591299455824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="278" key="GridCell.Tab.0.left/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455824" />
+    <state width="1860" height="278" key="GridCell.Tab.0.right" timestamp="1591299455824">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1860" height="278" key="GridCell.Tab.0.right/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591299455824" />
+    <state x="732" y="231" key="RollbackChangesDialog" timestamp="1591292480028">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="732" y="231" key="RollbackChangesDialog/0.0.1920.1040/1920.0.1680.1010@0.0.1920.1040" timestamp="1591292480028" />
   </component>
 </project>

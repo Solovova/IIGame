@@ -17,6 +17,9 @@ val platform = when { os.isWindows -> "win"; os.isLinux-> "linux"; os.isMacOsX -
 
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
+    implementation (project(":visual_desktop"))
+    implementation (project(":visual_core"))
+    implementation (project(":engine_player"))
     implementation("org.openjfx:javafx-fxml:14:$platform")
     implementation("org.openjfx:javafx-web:14:$platform")
     implementation("org.openjfx:javafx-media:14:$platform")
@@ -24,6 +27,7 @@ dependencies {
     implementation("org.openjfx:javafx-base:14:$platform")
     implementation("org.openjfx:javafx-graphics:14:$platform")
     implementation("org.openjfx:javafx-controls:14:$platform")
+    implementation( "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.7")
     testCompile("junit", "junit", "4.12")
 }
 
