@@ -3,7 +3,7 @@ package com.solovova.iigame.engine.player
 import com.solovova.iigame.engine.utils.PlUtils
 import com.solovova.iigame.engine.workpoints.ContainerWorkPoints
 
-class Player(val collision: Array<Array<Int>>) {
+class Player(val collision: Array<Array<Int>>, val weight:Array<Array<Int>>) {
     private var turn: Int = 0
     private var x: Int = 12
     private var y: Int = 5
@@ -59,6 +59,8 @@ class Player(val collision: Array<Array<Int>>) {
     private fun turn() {
         turn++
 
+        val weight = this.weight[getX()][getY()] //ToDo
+
         worldTime += MINUTES_PER_TURN
 
         //Fatigue
@@ -68,10 +70,10 @@ class Player(val collision: Array<Array<Int>>) {
             else -> 2f
         }
 
-        this.stats["Pep"] = PlUtils.putInRange(getPep() + PEP_PER_TURN * scalarPep, 0f, 100f)
+        this.stats["Pep"] = PlUtils.putInRange(getPep() + PEP_PER_TURN * scalarPep * weight, 0f, 100f)
 
         //Food
-        this.stats["Food"] = PlUtils.putInRange(getFood() + FOOD_PER_TURN, 0f, 100f)
+        this.stats["Food"] = PlUtils.putInRange(getFood() + FOOD_PER_TURN*weight, 0f, 100f)
 
         //Health
         if (getPep() >= PEP_UP) this.stats["Health"] = getHealth() + PEP_TO_HEALTH_PLUS

@@ -10,7 +10,7 @@ import java.lang.reflect.Type
 
 
 class LogicTiledMap {
-    private fun convertToArray(tiledMap: TiledMap):Array<Array<Int>> {
+    private fun convertToCollisionArray(tiledMap: TiledMap):Array<Array<Int>> {
         val collisionLayer = tiledMap.layers.get("Collisions") as TiledMapTileLayer
         val tiledMapCollisions = Array<Array<Int>>(collisionLayer.width) { Array<Int>(collisionLayer.height) { 0 } }
         for (x in 0..collisionLayer.width)
@@ -20,13 +20,23 @@ class LogicTiledMap {
         return tiledMapCollisions
     }
 
-    fun save(tiledMap: TiledMap) {
-        val tiledMapCollisions = this.convertToArray(tiledMap)
+    private fun convertToWeightArray(tiledMap: TiledMap):Array<Array<Int>> {
+        val roadLayer = tiledMap.layers.get("Road") as TiledMapTileLayer
+        val tiledMapRoad = Array<Array<Int>>(roadLayer.width) { Array<Int>(roadLayer.height) { 2 } }
+        for (x in 0..roadLayer.width)
+            for (y in 0..roadLayer.height)
+                if (roadLayer.getCell(x, y) != null)
+                    tiledMapRoad[x][y] = 1
+        return tiledMapRoad
+    }
+
+    private fun saveCollision(tiledMap: TiledMap) {
+        val tiledMapCollisions = this.convertToCollisionArray(tiledMap)
         val tiledMapCollisionsGson = Gson().toJson(tiledMapCollisions)
         File("tiledMapCollisionsGson.json").writeText(tiledMapCollisionsGson.toString())
     }
 
-    private fun load(): Array<Array<Int>>? {
+    private fun loadCollision(): Array<Array<Int>>? {
         var result:Array<Array<Int>>? = null
         try {
             val jsonStr = File("tiledMapCollisionsGson.json").readText()
@@ -39,14 +49,18 @@ class LogicTiledMap {
         return result
     }
 
-    fun loadFromCacheOrTMap(tiledMap: TiledMap):Array<Array<Int>> {
-        val result:Array<Array<Int>>? = this.load()
+    fun loadCollisionFromCacheOrTMap(tiledMap: TiledMap):Array<Array<Int>> {
+        val result:Array<Array<Int>>? = this.loadCollision()
         if (result != null) return result
-        return this.convertToArray(tiledMap)
+        return this.convertToCollisionArray(tiledMap)
+    }
+
+    fun loadWeightFromTMap(tiledMap: TiledMap):Array<Array<Int>> {
+        return this.convertToWeightArray(tiledMap)
     }
 
     fun saveToCache() {
         val tiledMap = TmxMapLoader().load("map/map.tmx")
-        LogicTiledMap().save(tiledMap)
+        LogicTiledMap().saveCollision(tiledMap)
     }
 }

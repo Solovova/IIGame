@@ -4,5 +4,5 @@ import com.solovova.iigame.engine.player.Player
 
 class ResContainer {
     val rcMap:ResContainerMap = ResContainerMap()
-    val player: Player = Player(rcMap.collision)
+    val player: Player = Player(rcMap.collision,rcMap.weight)
 }
