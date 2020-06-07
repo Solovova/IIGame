@@ -3,7 +3,7 @@ package com.solovova.iigame.engine.player
 import com.solovova.iigame.engine.utils.PlUtils
 import com.solovova.iigame.engine.workpoints.ContainerWorkPoints
 
-class Player(private val collision: Array<Array<Int>>) {
+class Player(val collision: Array<Array<Int>>) {
     private var turn: Int = 0
     private var x: Int = 12
     private var y: Int = 5

@@ -4,11 +4,14 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.Pane?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.125" xmlns:fx="http://javafx.com/fxml/1"
-    fx:controller="com.solovova.iigame.gui.controller.MainController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.solovova.iigame.gui.controller.MainController">
    <children>
-      <Button fx:id="buttonUp" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Button" onAction="#buttonClicked"/>
+      <Button fx:id="buttonUp" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonClicked" text="Button" />
       <Label fx:id="testLabel" layoutX="40.0" layoutY="65.0" prefHeight="17.0" prefWidth="192.0" text="Label" />
+      <Button layoutX="14.0" layoutY="120.0" mnemonicParsing="false" text="Work" onAction="#buttonGoToWork"/>
+      <Button layoutX="14.0" layoutY="160.0" mnemonicParsing="false" text="Food" onAction="#buttonGoToFood"/>
+      <Button layoutX="14.0" layoutY="200.0" mnemonicParsing="false" text="Eat" onAction="#buttonGoToEat"/>
+      <Button layoutX="14.0" layoutY="240.0" mnemonicParsing="false" text="Sleep" onAction="#buttonGoToSleep"/>
+      <Button layoutX="14.0" layoutY="280.0" mnemonicParsing="false" text="Do" onAction="#buttonGoToDo"/>
    </children>
 </Pane>
-
